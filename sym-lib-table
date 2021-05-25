@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name exocam_charge_amp)(type Legacy)(uri ${KIPRJMOD}/exocam_charge_amp.lib)(options "")(descr ""))
+)
