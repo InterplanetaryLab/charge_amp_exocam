@@ -252,7 +252,7 @@ U 1 1 60B97329
 P 4400 1450
 F 0 "H1" H 4500 1496 50  0000 L CNN
 F 1 "MountingHole" H 4500 1405 50  0000 L CNN
-F 2 "" H 4400 1450 50  0001 C CNN
+F 2 "exocam_charge_amp:mount_hole_2.5mm" H 4400 1450 50  0001 C CNN
 F 3 "~" H 4400 1450 50  0001 C CNN
 	1    4400 1450
 	1    0    0    -1  
@@ -263,7 +263,7 @@ U 1 1 60B9898F
 P 4400 1700
 F 0 "H2" H 4500 1746 50  0000 L CNN
 F 1 "MountingHole" H 4500 1655 50  0000 L CNN
-F 2 "" H 4400 1700 50  0001 C CNN
+F 2 "exocam_charge_amp:mount_hole_2.5mm" H 4400 1700 50  0001 C CNN
 F 3 "~" H 4400 1700 50  0001 C CNN
 	1    4400 1700
 	1    0    0    -1  
@@ -274,7 +274,7 @@ U 1 1 60B99095
 P 4400 2000
 F 0 "H3" H 4500 2046 50  0000 L CNN
 F 1 "MountingHole" H 4500 1955 50  0000 L CNN
-F 2 "" H 4400 2000 50  0001 C CNN
+F 2 "exocam_charge_amp:mount_hole_2.5mm" H 4400 2000 50  0001 C CNN
 F 3 "~" H 4400 2000 50  0001 C CNN
 	1    4400 2000
 	1    0    0    -1  
@@ -285,7 +285,7 @@ U 1 1 60B99959
 P 4400 2300
 F 0 "H4" H 4500 2346 50  0000 L CNN
 F 1 "MountingHole" H 4500 2255 50  0000 L CNN
-F 2 "" H 4400 2300 50  0001 C CNN
+F 2 "exocam_charge_amp:mount_hole_2.5mm" H 4400 2300 50  0001 C CNN
 F 3 "~" H 4400 2300 50  0001 C CNN
 	1    4400 2300
 	1    0    0    -1  

@@ -290,4 +290,33 @@ F 3 "~" H 4400 2300 50  0001 C CNN
 	1    4400 2300
 	1    0    0    -1  
 $EndComp
+$Comp
+L exocam_charge_amp:dupont2x1 J2
+U 1 1 60BB220E
+P 2750 1000
+F 0 "J2" V 2500 850 50  0000 L CNN
+F 1 "dupont2x1" V 2600 850 50  0000 L CNN
+F 2 "exocam_charge_amp:dupont2x1" H 2700 1150 50  0001 C CNN
+F 3 "" H 2700 1150 50  0001 C CNN
+	1    2750 1000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60BB5C21
+P 2750 1150
+F 0 "#PWR?" H 2750 900 50  0001 C CNN
+F 1 "GND" V 2755 1022 50  0000 R CNN
+F 2 "" H 2750 1150 50  0001 C CNN
+F 3 "" H 2750 1150 50  0001 C CNN
+	1    2750 1150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2750 1150 2700 1150
+Wire Wire Line
+	2700 1150 2700 1100
+Wire Wire Line
+	2600 1100 2600 1500
+Connection ~ 2600 1500
 $EndSCHEMATC
