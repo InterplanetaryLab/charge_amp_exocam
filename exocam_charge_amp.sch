@@ -139,7 +139,7 @@ Connection ~ 1700 1200
 Text Notes 7150 7000 0    50   ~ 0
 Piezo Sensor Amplification Circuit
 Text Notes 10600 7650 0    50   ~ 0
-V1.00\n
+V1.1\n
 $Comp
 L exocam_charge_amp:TLV2771CDBVT U1
 U 1 1 60B61039
@@ -211,16 +211,16 @@ U 1 1 60B80DC6
 P 4100 900
 F 0 "J1" V 4154 672 50  0000 R CNN
 F 1 "dupont2x1" V 4063 672 50  0000 R CNN
-F 2 "" H 4050 1050 50  0001 C CNN
+F 2 "exocam_charge_amp:dupont2x1" H 4050 1050 50  0001 C CNN
 F 3 "" H 4050 1050 50  0001 C CNN
 	1    4100 900 
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0105
 U 1 1 60B84C12
 P 4150 800
-F 0 "#PWR?" H 4150 550 50  0001 C CNN
+F 0 "#PWR0105" H 4150 550 50  0001 C CNN
 F 1 "GND" H 4155 627 50  0000 C CNN
 F 2 "" H 4150 800 50  0001 C CNN
 F 3 "" H 4150 800 50  0001 C CNN
@@ -228,10 +228,10 @@ F 3 "" H 4150 800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0106
 U 1 1 60B84E19
 P 4300 750
-F 0 "#PWR?" H 4300 600 50  0001 C CNN
+F 0 "#PWR0106" H 4300 600 50  0001 C CNN
 F 1 "+5V" V 4315 878 50  0000 L CNN
 F 2 "" H 4300 750 50  0001 C CNN
 F 3 "" H 4300 750 50  0001 C CNN
@@ -246,4 +246,48 @@ Wire Wire Line
 	1750 1050 1750 900 
 Wire Wire Line
 	1950 1050 1950 900 
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 60B97329
+P 4400 1450
+F 0 "H1" H 4500 1496 50  0000 L CNN
+F 1 "MountingHole" H 4500 1405 50  0000 L CNN
+F 2 "exocam_charge_amp:mount_hole_2.5mm" H 4400 1450 50  0001 C CNN
+F 3 "~" H 4400 1450 50  0001 C CNN
+	1    4400 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 60B9898F
+P 4400 1700
+F 0 "H2" H 4500 1746 50  0000 L CNN
+F 1 "MountingHole" H 4500 1655 50  0000 L CNN
+F 2 "exocam_charge_amp:mount_hole_2.5mm" H 4400 1700 50  0001 C CNN
+F 3 "~" H 4400 1700 50  0001 C CNN
+	1    4400 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 60B99095
+P 4400 2000
+F 0 "H3" H 4500 2046 50  0000 L CNN
+F 1 "MountingHole" H 4500 1955 50  0000 L CNN
+F 2 "exocam_charge_amp:mount_hole_2.5mm" H 4400 2000 50  0001 C CNN
+F 3 "~" H 4400 2000 50  0001 C CNN
+	1    4400 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 60B99959
+P 4400 2300
+F 0 "H4" H 4500 2346 50  0000 L CNN
+F 1 "MountingHole" H 4500 2255 50  0000 L CNN
+F 2 "exocam_charge_amp:mount_hole_2.5mm" H 4400 2300 50  0001 C CNN
+F 3 "~" H 4400 2300 50  0001 C CNN
+	1    4400 2300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
