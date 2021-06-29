@@ -205,43 +205,6 @@ F 3 "" H 3650 1500 50  0001 C CNN
 	1    3650 1500
 	0    1    1    0   
 $EndComp
-$Comp
-L exocam_charge_amp:dupont2x1 J1
-U 1 1 60B80DC6
-P 4100 900
-F 0 "J1" V 4154 672 50  0000 R CNN
-F 1 "dupont2x1" V 4063 672 50  0000 R CNN
-F 2 "exocam_charge_amp:dupont2x1" H 4050 1050 50  0001 C CNN
-F 3 "" H 4050 1050 50  0001 C CNN
-	1    4100 900 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0105
-U 1 1 60B84C12
-P 4150 800
-F 0 "#PWR0105" H 4150 550 50  0001 C CNN
-F 1 "GND" H 4155 627 50  0000 C CNN
-F 2 "" H 4150 800 50  0001 C CNN
-F 3 "" H 4150 800 50  0001 C CNN
-	1    4150 800 
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+5V #PWR0106
-U 1 1 60B84E19
-P 4300 750
-F 0 "#PWR0106" H 4300 600 50  0001 C CNN
-F 1 "+5V" V 4315 878 50  0000 L CNN
-F 2 "" H 4300 750 50  0001 C CNN
-F 3 "" H 4300 750 50  0001 C CNN
-	1    4300 750 
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4250 750  4300 750 
-Wire Wire Line
-	4250 800  4250 750 
 Wire Wire Line
 	1750 1050 1750 900 
 Wire Wire Line
@@ -291,32 +254,47 @@ F 3 "~" H 4400 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L exocam_charge_amp:dupont2x1 J2
-U 1 1 60BB220E
-P 2750 1000
-F 0 "J2" V 2500 850 50  0000 L CNN
-F 1 "dupont2x1" V 2600 850 50  0000 L CNN
-F 2 "exocam_charge_amp:dupont2x1" H 2700 1150 50  0001 C CNN
-F 3 "" H 2700 1150 50  0001 C CNN
-	1    2750 1000
-	0    1    1    0   
+L exocam_charge_amp:dupont3x1 J1
+U 1 1 60DCA11E
+P 2700 950
+F 0 "J1" V 2754 622 50  0000 R CNN
+F 1 "dupont3x1" V 2663 622 50  0000 R CNN
+F 2 "exocam_charge_amp:dupont3x1" H 2650 1100 50  0001 C CNN
+F 3 "" H 2650 1100 50  0001 C CNN
+	1    2700 950 
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?
-U 1 1 60BB5C21
-P 2750 1150
-F 0 "#PWR?" H 2750 900 50  0001 C CNN
-F 1 "GND" V 2755 1022 50  0000 R CNN
-F 2 "" H 2750 1150 50  0001 C CNN
-F 3 "" H 2750 1150 50  0001 C CNN
-	1    2750 1150
-	0    -1   -1   0   
+U 1 1 60DCCF64
+P 2750 750
+F 0 "#PWR?" H 2750 500 50  0001 C CNN
+F 1 "GND" H 2755 577 50  0000 C CNN
+F 2 "" H 2750 750 50  0001 C CNN
+F 3 "" H 2750 750 50  0001 C CNN
+	1    2750 750 
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2750 1150 2700 1150
+	2750 850  2750 750 
+$Comp
+L power:+5V #PWR?
+U 1 1 60DD0686
+P 2950 750
+F 0 "#PWR?" H 2950 600 50  0001 C CNN
+F 1 "+5V" H 2965 923 50  0000 C CNN
+F 2 "" H 2950 750 50  0001 C CNN
+F 3 "" H 2950 750 50  0001 C CNN
+	1    2950 750 
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	2700 1150 2700 1100
+	2950 850  2950 750 
 Wire Wire Line
-	2600 1100 2600 1500
+	2850 850  2850 800 
+Wire Wire Line
+	2600 1500 2600 800 
+Wire Wire Line
+	2600 800  2850 800 
 Connection ~ 2600 1500
 $EndSCHEMATC
