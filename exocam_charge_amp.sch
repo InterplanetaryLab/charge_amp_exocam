@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:+5V #PWR0101
+L exocam_charge_amp-rescue:+5V-power #PWR0101
 U 1 1 60AC4579
 P 900 1050
 F 0 "#PWR0101" H 900 900 50  0001 C CNN
@@ -25,7 +25,7 @@ F 3 "" H 900 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R1
+L exocam_charge_amp-rescue:R-Device R1
 U 1 1 60AC52F9
 P 900 1350
 F 0 "R1" H 970 1396 50  0000 L CNN
@@ -36,7 +36,7 @@ F 3 "~" H 900 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R2
+L exocam_charge_amp-rescue:R-Device R2
 U 1 1 60AC57F6
 P 900 1800
 F 0 "R2" H 970 1846 50  0000 L CNN
@@ -53,7 +53,7 @@ Wire Wire Line
 Wire Wire Line
 	900  1950 900  2150
 $Comp
-L power:GND #PWR0102
+L exocam_charge_amp-rescue:GND-power #PWR0102
 U 1 1 60AC7448
 P 900 2150
 F 0 "#PWR0102" H 900 1900 50  0001 C CNN
@@ -64,7 +64,7 @@ F 3 "" H 900 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C1
+L exocam_charge_amp-rescue:C-Device C1
 U 1 1 60AC9C31
 P 3300 2400
 F 0 "C1" V 3048 2400 50  0000 C CNN
@@ -79,7 +79,7 @@ Wire Wire Line
 Wire Wire Line
 	3450 2400 3650 2400
 $Comp
-L Device:R R3
+L exocam_charge_amp-rescue:R-Device R3
 U 1 1 60ACB29B
 P 3300 2800
 F 0 "R3" V 3093 2800 50  0000 C CNN
@@ -98,7 +98,7 @@ Wire Wire Line
 Wire Wire Line
 	3650 2800 3650 2400
 $Comp
-L Device:Buzzer BZ1
+L exocam_charge_amp-rescue:Buzzer-Device BZ1
 U 1 1 60AEB9E7
 P 1850 800
 F 0 "BZ1" V 1901 613 50  0000 R CNN
@@ -109,7 +109,7 @@ F 3 "~" V 1825 900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R4
+L exocam_charge_amp-rescue:R-Device R4
 U 1 1 60AECA35
 P 1850 1200
 F 0 "R4" V 1643 1200 50  0000 C CNN
@@ -152,7 +152,7 @@ F 3 "" H 3300 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0103
+L exocam_charge_amp-rescue:GND-power #PWR0103
 U 1 1 60B68AE8
 P 2900 1600
 F 0 "#PWR0103" H 2900 1350 50  0001 C CNN
@@ -195,7 +195,7 @@ Connection ~ 3750 1950
 Wire Wire Line
 	3750 1950 3750 2400
 $Comp
-L power:+5V #PWR0104
+L exocam_charge_amp-rescue:+5V-power #PWR0104
 U 1 1 60B6BDDA
 P 3650 1500
 F 0 "#PWR0104" H 3650 1350 50  0001 C CNN
@@ -210,7 +210,7 @@ Wire Wire Line
 Wire Wire Line
 	1950 1050 1950 900 
 $Comp
-L Mechanical:MountingHole H1
+L exocam_charge_amp-rescue:MountingHole-Mechanical H1
 U 1 1 60B97329
 P 4400 1450
 F 0 "H1" H 4500 1496 50  0000 L CNN
@@ -221,7 +221,7 @@ F 3 "~" H 4400 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H2
+L exocam_charge_amp-rescue:MountingHole-Mechanical H2
 U 1 1 60B9898F
 P 4400 1700
 F 0 "H2" H 4500 1746 50  0000 L CNN
@@ -232,7 +232,7 @@ F 3 "~" H 4400 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H3
+L exocam_charge_amp-rescue:MountingHole-Mechanical H3
 U 1 1 60B99095
 P 4400 2000
 F 0 "H3" H 4500 2046 50  0000 L CNN
@@ -243,7 +243,7 @@ F 3 "~" H 4400 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H4
+L exocam_charge_amp-rescue:MountingHole-Mechanical H4
 U 1 1 60B99959
 P 4400 2300
 F 0 "H4" H 4500 2346 50  0000 L CNN
@@ -254,7 +254,7 @@ F 3 "~" H 4400 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0105
+L exocam_charge_amp-rescue:GND-power #PWR0105
 U 1 1 60DCCF64
 P 2750 700
 F 0 "#PWR0105" H 2750 450 50  0001 C CNN
@@ -265,7 +265,7 @@ F 3 "" H 2750 700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+5V #PWR0106
+L exocam_charge_amp-rescue:+5V-power #PWR0106
 U 1 1 60DD0686
 P 3050 750
 F 0 "#PWR0106" H 3050 600 50  0001 C CNN
