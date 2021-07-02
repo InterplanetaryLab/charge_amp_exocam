@@ -262,10 +262,10 @@ Wire Wire Line
 Wire Wire Line
 	3700 5550 3700 5150
 $Comp
-L Device:Buzzer BZ?
+L Device:Buzzer BZ2
 U 1 1 60DFD424
 P 1900 3550
-F 0 "BZ?" V 1951 3363 50  0000 R CNN
+F 0 "BZ2" V 1951 3363 50  0000 R CNN
 F 1 "Buzzer" V 1860 3363 50  0000 R CNN
 F 2 "exocam_charge_amp:piezo_buzzer" V 1875 3650 50  0001 C CNN
 F 3 "~" V 1875 3650 50  0001 C CNN
