@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:+5V #PWR0101
-U 1 1 60AC4579
-P 900 1050
-F 0 "#PWR0101" H 900 900 50  0001 C CNN
-F 1 "+5V" H 915 1223 50  0000 C CNN
-F 2 "" H 900 1050 50  0001 C CNN
-F 3 "" H 900 1050 50  0001 C CNN
-	1    900  1050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R1
 U 1 1 60AC52F9
 P 900 1350
@@ -46,8 +35,6 @@ F 3 "~" H 900 1800 50  0001 C CNN
 	1    900  1800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	900  1050 900  1200
 Wire Wire Line
 	900  1500 900  1550
 Wire Wire Line
@@ -189,22 +176,9 @@ Wire Wire Line
 Connection ~ 3650 2400
 Wire Wire Line
 	1700 1950 3750 1950
-Wire Wire Line
-	1700 1200 1700 1350
 Connection ~ 3750 1950
 Wire Wire Line
 	3750 1950 3750 2400
-$Comp
-L power:+5V #PWR0104
-U 1 1 60B6BDDA
-P 3650 1500
-F 0 "#PWR0104" H 3650 1350 50  0001 C CNN
-F 1 "+5V" V 3665 1628 50  0000 L CNN
-F 2 "" H 3650 1500 50  0001 C CNN
-F 3 "" H 3650 1500 50  0001 C CNN
-	1    3650 1500
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	1750 1050 1750 900 
 Wire Wire Line
@@ -254,62 +228,232 @@ F 3 "~" H 4400 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0105
-U 1 1 60DCCF64
-P 2750 700
-F 0 "#PWR0105" H 2750 450 50  0001 C CNN
-F 1 "GND" H 2755 527 50  0000 C CNN
-F 2 "" H 2750 700 50  0001 C CNN
-F 3 "" H 2750 700 50  0001 C CNN
-	1    2750 700 
-	-1   0    0    1   
+L Device:C C2
+U 1 1 60DFD412
+P 3350 5150
+F 0 "C2" V 3098 5150 50  0000 C CNN
+F 1 "5pF" V 3189 5150 50  0000 C CNN
+F 2 "exocam_charge_amp:0603_R" H 3388 5000 50  0001 C CNN
+F 3 "~" H 3350 5150 50  0001 C CNN
+	1    3350 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 5150 3200 5150
+Wire Wire Line
+	3500 5150 3700 5150
+$Comp
+L Device:R R6
+U 1 1 60DFD41A
+P 3350 5550
+F 0 "R6" V 3143 5550 50  0000 C CNN
+F 1 "1M" V 3234 5550 50  0000 C CNN
+F 2 "exocam_charge_amp:0603_R" V 3280 5550 50  0001 C CNN
+F 3 "~" H 3350 5550 50  0001 C CNN
+	1    3350 5550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 5550 3100 5550
+Wire Wire Line
+	3100 5550 3100 5150
+Wire Wire Line
+	3500 5550 3700 5550
+Wire Wire Line
+	3700 5550 3700 5150
+$Comp
+L Device:Buzzer BZ2
+U 1 1 60DFD424
+P 1900 3550
+F 0 "BZ2" V 1951 3363 50  0000 R CNN
+F 1 "Buzzer" V 1860 3363 50  0000 R CNN
+F 2 "exocam_charge_amp:piezo_buzzer" V 1875 3650 50  0001 C CNN
+F 3 "~" V 1875 3650 50  0001 C CNN
+	1    1900 3550
+	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+5V #PWR0106
-U 1 1 60DD0686
-P 3050 750
-F 0 "#PWR0106" H 3050 600 50  0001 C CNN
-F 1 "+5V" H 3065 923 50  0000 C CNN
-F 2 "" H 3050 750 50  0001 C CNN
-F 3 "" H 3050 750 50  0001 C CNN
-	1    3050 750 
+L Device:R R5
+U 1 1 60DFD42A
+P 1900 3950
+F 0 "R5" V 1693 3950 50  0000 C CNN
+F 1 "1M" V 1784 3950 50  0000 C CNN
+F 2 "exocam_charge_amp:0603_R" V 1830 3950 50  0001 C CNN
+F 3 "~" H 1900 3950 50  0001 C CNN
+	1    1900 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 3950 1750 3800
+Wire Wire Line
+	1750 3800 1800 3800
+Wire Wire Line
+	2050 3950 2050 3800
+Wire Wire Line
+	2050 3800 2000 3800
+Connection ~ 1750 3950
+$Comp
+L exocam_charge_amp:TLV2771CDBVT U2
+U 1 1 60DFD43A
+P 3350 4150
+F 0 "U2" H 3375 4365 50  0000 C CNN
+F 1 "TLV2771CDBVT" H 3375 4274 50  0000 C CNN
+F 2 "exocam_charge_amp:TLV2271DBV" H 3350 4150 50  0001 C CNN
+F 3 "" H 3350 4150 50  0001 C CNN
+	1    3350 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60DFD440
+P 2950 4350
+F 0 "#PWR?" H 2950 4100 50  0001 C CNN
+F 1 "GND" V 2955 4222 50  0000 R CNN
+F 2 "" H 2950 4350 50  0001 C CNN
+F 3 "" H 2950 4350 50  0001 C CNN
+	1    2950 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2950 4350 3050 4350
+Wire Wire Line
+	3050 4250 2650 4250
+Wire Wire Line
+	2650 4250 2650 5050
+Wire Wire Line
+	2650 5050 3100 5050
+Wire Wire Line
+	3100 5050 3100 5150
+Connection ~ 3100 5150
+Wire Wire Line
+	3700 4450 3800 4450
+Wire Wire Line
+	3800 4450 3800 4700
+Wire Wire Line
+	3800 5150 3700 5150
+Connection ~ 3700 5150
+Wire Wire Line
+	1750 4700 3800 4700
+Connection ~ 3800 4700
+Wire Wire Line
+	3800 4700 3800 5150
+Wire Wire Line
+	1800 3800 1800 3650
+Wire Wire Line
+	2000 3800 2000 3650
+Connection ~ 2050 3950
+Wire Wire Line
+	2050 4450 3050 4450
+Wire Wire Line
+	2050 3950 2050 4450
+Text GLabel 1200 1550 1    50   Input ~ 0
+VGND
+Text GLabel 2350 4450 3    50   Input ~ 0
+VGND
+$Comp
+L exocam_charge_amp:jstsh6x1 J1
+U 1 1 60E1AF6A
+P 4250 1150
+F 0 "J1" V 4304 522 50  0000 R CNN
+F 1 "jstsh6x1" V 4213 522 50  0000 R CNN
+F 2 "" H 4200 1300 50  0001 C CNN
+F 3 "" H 4200 1300 50  0001 C CNN
+	1    4250 1150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60E1C732
+P 4800 1000
+F 0 "#PWR?" H 4800 850 50  0001 C CNN
+F 1 "+3.3V" H 4815 1173 50  0000 C CNN
+F 2 "" H 4800 1000 50  0001 C CNN
+F 3 "" H 4800 1000 50  0001 C CNN
+	1    4800 1000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 1500 2600 800 
-Wire Wire Line
-	2600 800  2850 800 
-Connection ~ 2600 1500
+	4800 1050 4800 1000
 $Comp
-L exocam_charge_amp:dupont4x1 J1
-U 1 1 60DF5917
-P 2700 1000
-F 0 "J1" V 2754 572 50  0000 R CNN
-F 1 "dupont4x1" V 2663 572 50  0000 R CNN
-F 2 "exocam_charge_amp:dupont4x1" H 2650 1150 50  0001 C CNN
-F 3 "" H 2650 1150 50  0001 C CNN
-	1    2700 1000
-	0    -1   -1   0   
+L power:GND #PWR?
+U 1 1 60E1EDAD
+P 4150 950
+F 0 "#PWR?" H 4150 700 50  0001 C CNN
+F 1 "GND" H 4155 777 50  0000 C CNN
+F 2 "" H 4150 950 50  0001 C CNN
+F 3 "" H 4150 950 50  0001 C CNN
+	1    4150 950 
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3050 900  3050 750 
+	4300 1050 4300 950 
 Wire Wire Line
-	2850 800  2850 900 
+	4300 950  4150 950 
+Text GLabel 4400 1000 1    50   Input ~ 0
+AMP1
 Wire Wire Line
-	2750 700  2750 900 
+	4400 1050 4400 1000
+Text GLabel 4500 1000 1    50   Input ~ 0
+UNAMP1
 Wire Wire Line
-	1700 1350 2650 1350
+	4500 1000 4500 1050
+Text GLabel 4600 1000 1    50   Input ~ 0
+AMP2
 Wire Wire Line
-	2650 1350 2650 750 
+	4600 1000 4600 1050
+Text GLabel 4700 1000 1    50   Input ~ 0
+UNAMP2
 Wire Wire Line
-	2650 750  2950 750 
+	4700 1000 4700 1050
 Wire Wire Line
-	2950 750  2950 900 
-Connection ~ 1700 1350
+	1750 3950 1750 4700
+Text GLabel 1750 4150 0    50   Input ~ 0
+UNAMP2
+Text GLabel 2700 4250 1    50   Input ~ 0
+AMP2
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60E36A79
+P 3800 4250
+F 0 "#PWR?" H 3800 4100 50  0001 C CNN
+F 1 "+3.3V" H 3815 4423 50  0000 C CNN
+F 2 "" H 3800 4250 50  0001 C CNN
+F 3 "" H 3800 4250 50  0001 C CNN
+	1    3800 4250
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	1700 1350 1700 1950
-Text Label 2100 1350 0    50   ~ 0
-UnAmplified
-Text Label 2600 1250 1    50   ~ 0
-Amplified
+	3700 4250 3800 4250
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60E3956C
+P 3750 1500
+F 0 "#PWR?" H 3750 1350 50  0001 C CNN
+F 1 "+3.3V" H 3765 1673 50  0000 C CNN
+F 2 "" H 3750 1500 50  0001 C CNN
+F 3 "" H 3750 1500 50  0001 C CNN
+	1    3750 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 1500 3750 1500
+Wire Wire Line
+	1700 1200 1700 1950
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60E3E4A9
+P 900 1000
+F 0 "#PWR?" H 900 850 50  0001 C CNN
+F 1 "+3.3V" H 915 1173 50  0000 C CNN
+F 2 "" H 900 1000 50  0001 C CNN
+F 3 "" H 900 1000 50  0001 C CNN
+	1    900  1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  1000 900  1200
+Text GLabel 1700 1350 0    50   Input ~ 0
+UNAMP1
+Text GLabel 2700 1500 1    50   Input ~ 0
+AMP1
 $EndSCHEMATC

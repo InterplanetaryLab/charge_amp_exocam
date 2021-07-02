@@ -88,34 +88,37 @@ X VDD 5 350 -100 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# exocam_charge_amp_dupont4x1
+# exocam_charge_amp_jstsh6x1
 #
-DEF exocam_charge_amp_dupont4x1 J 0 40 Y Y 1 F N
+DEF exocam_charge_amp_jstsh6x1 J 0 40 Y Y 1 F N
 F0 "J" -50 50 50 H V C CNN
-F1 "exocam_charge_amp_dupont4x1" -50 150 50 H V C CNN
+F1 "exocam_charge_amp_jstsh6x1" -50 150 50 H V C CNN
 F2 "" -50 150 50 H I C CNN
 F3 "" -50 150 50 H I C CNN
 DRAW
-S -100 0 0 -400 0 1 0 N
+S -100 0 0 -600 0 1 0 N
 X ~ 1 100 -50 100 L 50 50 1 1 I
 X ~ 2 100 -150 100 L 50 50 1 1 I
 X ~ 3 100 -250 100 L 50 50 1 1 I
 X ~ 4 100 -350 100 L 50 50 1 1 I
+X ~ 5 100 -450 100 L 50 50 1 1 I
+X ~ 6 100 -550 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# power_+5V
+# power_+3.3V
 #
-DEF power_+5V #PWR 0 0 Y Y 1 F P
+DEF power_+3.3V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+5V" 0 140 50 H V C CNN
+F1 "power_+3.3V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+ALIAS +3.3V
 DRAW
 P 2 0 1 0 -30 50 0 100 N
 P 2 0 1 0 0 0 0 100 N
 P 2 0 1 0 0 100 30 50 N
-X +5V 1 0 0 0 U 50 50 1 1 W N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
