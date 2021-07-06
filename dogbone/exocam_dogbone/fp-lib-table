@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name exocam_charge_amp)(type KiCad)(uri /home/rommac/charge_amp_exocam/footprints/exocam_charge_amp.pretty)(options "")(descr ""))
+)
