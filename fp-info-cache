@@ -1,4 +1,4 @@
-11359510569763
+17877812788763
 exocam_charge_amp
 0603_R
 
@@ -35,6 +35,27 @@ dupont4x1
 4
 4
 exocam_charge_amp
+jstsh2x1
+
+
+0
+8
+7
+exocam_charge_amp
+jstsh6x1
+
+
+0
+8
+7
+exocam_charge_amp
+jstsh8x1
+
+
+0
+10
+9
+exocam_charge_amp
 mount_hole_2.5mm
 
 
@@ -43,6 +64,13 @@ mount_hole_2.5mm
 1
 exocam_charge_amp
 piezo_buzzer
+
+
+0
+2
+2
+exocam_charge_amp
+piezo_buzzer_alt
 
 
 0
