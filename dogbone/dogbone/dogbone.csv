@@ -1,0 +1,8 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"U1";"TLV2271DBV";1;"TLV2771CDBVT";;;
+2;"R4,R3";"0603_R";2;"1M";;;
+3;"R2,R1";"0603_R";2;"1k";;;
+4;"J1";"jstsh4x1";1;"jstsh4x1";;;
+5;"C1";"0603_R";1;"5pF";;;
+6;"BZ1";"piezo_buzzer_alt";1;"Buzzer";;;
+7;"H3,H2,H1";"mount_hole_2.5mm";3;"MountingHole";;;
