@@ -1,3 +1,7 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP jstsh4x1
+D SM04B-SRSS-TB
+$ENDCMP
+#
 #End Doc Library

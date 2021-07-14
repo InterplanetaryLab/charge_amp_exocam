@@ -7,7 +7,7 @@
       "Application": "Pcbnew",
       "Version":     "5.1.10"
     },
-    "CreationDate":  "2021-05-24T18:10:12-07:00"
+    "CreationDate":  "2021-07-14T14:56:21-07:00"
   },
   "GeneralSpecs":
   {
@@ -19,8 +19,8 @@
     },
     "Size":
     {
-      "X": 16.560,
-      "Y": 14.020
+      "X": 29.650,
+      "Y": 18.050
     },
     "LayerNumber": 2,
     "BoardThickness":  1.600
@@ -58,16 +58,6 @@
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "exocam_charge_amp-F_SilkS.gbr",
-      "FileFunction":  "Legend,Top",
-      "FilePolarity":  "Positive"
-    },
-    {
-      "Path":  "exocam_charge_amp-B_SilkS.gbr",
-      "FileFunction":  "Legend,Bot",
-      "FilePolarity":  "Positive"
-    },
-    {
       "Path":  "exocam_charge_amp-F_Mask.gbr",
       "FileFunction":  "SolderMask,Top",
       "FilePolarity":  "Negative"
@@ -85,10 +75,6 @@
   ],
   "MaterialStackup":
   [
-    {
-      "Type":  "Legend",
-      "Notes":  "Layer F.SilkS"
-    },
     {
       "Type":  "SolderPaste",
       "Notes":  "Layer F.Paste"
@@ -117,10 +103,6 @@
     {
       "Type":  "SolderPaste",
       "Notes":  "Layer B.Paste"
-    },
-    {
-      "Type":  "Legend",
-      "Notes":  "Layer B.SilkS"
     }
   ]
 }
