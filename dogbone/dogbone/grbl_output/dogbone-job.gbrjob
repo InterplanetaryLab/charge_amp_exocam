@@ -7,7 +7,7 @@
       "Application": "Pcbnew",
       "Version":     "5.1.10"
     },
-    "CreationDate":  "2021-07-14T12:23:08-07:00"
+    "CreationDate":  "2021-07-19T16:22:53-07:00"
   },
   "GeneralSpecs":
   {
@@ -45,16 +45,6 @@
     {
       "Path":  "dogbone-B_Cu.gbr",
       "FileFunction":  "Copper,L2,Bot",
-      "FilePolarity":  "Positive"
-    },
-    {
-      "Path":  "dogbone-F_Adhes.gbr",
-      "FileFunction":  "Glue,Top",
-      "FilePolarity":  "Positive"
-    },
-    {
-      "Path":  "dogbone-B_Adhes.gbr",
-      "FileFunction":  "Glue,Bot",
       "FilePolarity":  "Positive"
     },
     {

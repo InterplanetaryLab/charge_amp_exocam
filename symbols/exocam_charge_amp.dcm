@@ -4,4 +4,8 @@ $CMP jstsh4x1
 D SM04B-SRSS-TB
 $ENDCMP
 #
+$CMP jstsh5x1
+D SM04B-SRSS-TB
+$ENDCMP
+#
 #End Doc Library

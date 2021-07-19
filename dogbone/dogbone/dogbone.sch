@@ -232,52 +232,52 @@ AMP
 Text GLabel 1900 2700 0    50   Input ~ 0
 UNAMP
 $Comp
-L exocam_charge_amp:jstsh4x1 J1
-U 1 1 60E73D05
-P 4800 1050
-F 0 "J1" V 4849 1088 50  0000 L CNN
-F 1 "jstsh4x1" V 4500 750 50  0000 L CNN
-F 2 "exocam_charge_amp:jstsh4x1" H 4750 1200 50  0001 C CNN
-F 3 "" H 4750 1200 50  0001 C CNN
-	1    4800 1050
+L exocam_charge_amp:jstsh5x1 J1
+U 1 1 60F622D2
+P 5750 1000
+F 0 "J1" V 5550 750 50  0000 L CNN
+F 1 "jstsh5x1" V 5450 600 50  0000 L CNN
+F 2 "" H 5700 1150 50  0001 C CNN
+F 3 "" H 5700 1150 50  0001 C CNN
+	1    5750 1000
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0105
-U 1 1 60E75791
-P 4750 800
-F 0 "#PWR0105" H 4750 550 50  0001 C CNN
-F 1 "GND" H 4650 800 50  0000 C CNN
-F 2 "" H 4750 800 50  0001 C CNN
-F 3 "" H 4750 800 50  0001 C CNN
-	1    4750 800 
+L exocam_charge_amp-cache:+3.3V #PWR?
+U 1 1 60F62E23
+P 6100 800
+F 0 "#PWR?" H 6100 650 50  0001 C CNN
+F 1 "+3.3V" H 6250 950 50  0000 C CNN
+F 2 "" H 6100 800 50  0001 C CNN
+F 3 "" H 6100 800 50  0001 C CNN
+	1    6100 800 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4750 750  4750 800 
-Wire Wire Line
-	4750 750  4850 750 
-Wire Wire Line
-	4850 750  4850 950 
 $Comp
-L exocam_charge_amp-cache:+3.3V #PWR0106
-U 1 1 60E76333
-P 5150 700
-F 0 "#PWR0106" H 5150 550 50  0001 C CNN
-F 1 "+3.3V" H 5165 873 50  0000 C CNN
-F 2 "" H 5150 700 50  0001 C CNN
-F 3 "" H 5150 700 50  0001 C CNN
-	1    5150 700 
+L power:GND #PWR?
+U 1 1 60F633AB
+P 5650 750
+F 0 "#PWR?" H 5650 500 50  0001 C CNN
+F 1 "GND" H 5655 577 50  0000 C CNN
+F 2 "" H 5650 750 50  0001 C CNN
+F 3 "" H 5650 750 50  0001 C CNN
+	1    5650 750 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5150 700  5150 950 
-Text GLabel 4950 900  1    50   Input ~ 0
+Text GLabel 5900 850  1    50   Input ~ 0
 AMP
-Text GLabel 5050 900  1    50   Input ~ 0
+Text GLabel 6000 800  1    50   Input ~ 0
 UNAMP
 Wire Wire Line
-	4950 900  4950 950 
+	5650 750  5800 750 
 Wire Wire Line
-	5050 900  5050 950 
+	5800 750  5800 900 
+Wire Wire Line
+	5900 850  5900 900 
+Wire Wire Line
+	6000 800  6000 900 
+Wire Wire Line
+	6100 800  6100 900 
+NoConn ~ 6200 900 
+NoConn ~ 6300 1100
 $EndSCHEMATC
