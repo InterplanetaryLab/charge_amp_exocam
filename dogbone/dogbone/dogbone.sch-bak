@@ -278,4 +278,6 @@ Wire Wire Line
 	6000 800  6000 900 
 Wire Wire Line
 	6100 800  6100 900 
+NoConn ~ 6200 900 
+NoConn ~ 6300 1100
 $EndSCHEMATC

@@ -3,6 +3,6 @@ Id,Designator,Package,Quantity,Designation,Supplier and ref
 2,"R4,R3",0603_R,2,1M,https://www.digikey.com/en/products/detail/yageo/RC0603FR-071ML/726844
 3,"R2,R1",0603_R,2,1k,https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT1K00/1761077
 4,J1,jstsh5x1,1,jstsh5x1,https://www.digikey.com/en/products/detail/jst-sales-america-inc/SM05B-SRSS-TB-LF-SN/926711
-5,C1,0603_R,1,5pF,https://www.digikey.com/en/products/detail/tdk-corporation/C1608C0G2A050C080AA/3955663
+5,C1,0603_C,1,5pF,https://www.digikey.com/en/products/detail/tdk-corporation/C1608C0G2A050C080AA/3955663
 6,BZ1,piezo_buzzer_alt,1,Buzzer,
 7,"H3,H2,H1",mount_hole_2.5mm,3,MountingHole,
