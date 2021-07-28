@@ -1,4 +1,4 @@
-19503502921763
+27667483506427
 exocam_charge_amp
 0603_R
 
@@ -35,6 +35,13 @@ dupont4x1
 4
 4
 exocam_charge_amp
+dupont5x1
+
+
+0
+4
+4
+exocam_charge_amp
 jstsh2x1
 
 
@@ -42,12 +49,26 @@ jstsh2x1
 4
 3
 exocam_charge_amp
+jstsh3x1
+
+
+0
+5
+4
+exocam_charge_amp
 jstsh4x1
 
 
 0
-8
+6
+5
+exocam_charge_amp
+jstsh5x1
+
+
+0
 7
+6
 exocam_charge_amp
 jstsh6x1
 
@@ -62,6 +83,20 @@ jstsh8x1
 0
 10
 9
+exocam_charge_amp
+jstsh9x1
+
+
+0
+11
+10
+exocam_charge_amp
+jstzh3x1
+
+
+0
+0
+0
 exocam_charge_amp
 mount_hole_2.5mm
 
