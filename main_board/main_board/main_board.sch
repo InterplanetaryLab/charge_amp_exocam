@@ -208,4 +208,57 @@ Text GLabel 4200 5100 2    50   Input ~ 0
 VBat
 Wire Wire Line
 	4200 5100 3750 5100
+$Comp
+L exocam_charge_amp-rescue:MountingHole-Mechanical H5
+U 1 1 61037EA1
+P 6800 3600
+F 0 "H5" H 6900 3646 50  0000 L CNN
+F 1 "MountingHole-Mechanical" H 6900 3555 50  0000 L CNN
+F 2 "exocam_charge_amp:mount_hole_2.5mm" H 6800 3600 50  0001 C CNN
+F 3 "" H 6800 3600 50  0001 C CNN
+	1    6800 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61051878
+P 3900 4000
+F 0 "#PWR?" H 3900 3750 50  0001 C CNN
+F 1 "GND" H 3905 3827 50  0000 C CNN
+F 2 "" H 3900 4000 50  0001 C CNN
+F 3 "" H 3900 4000 50  0001 C CNN
+	1    3900 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4000 3900 4000
+Wire Wire Line
+	3750 4100 3750 4000
+Connection ~ 3750 4000
+$Comp
+L power:GND #PWR?
+U 1 1 6105371B
+P 1050 5400
+F 0 "#PWR?" H 1050 5150 50  0001 C CNN
+F 1 "GND" H 1055 5227 50  0000 C CNN
+F 2 "" H 1050 5400 50  0001 C CNN
+F 3 "" H 1050 5400 50  0001 C CNN
+	1    1050 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 5400 1050 5400
+$Comp
+L power:GND #PWR?
+U 1 1 610550ED
+P 1050 4200
+F 0 "#PWR?" H 1050 3950 50  0001 C CNN
+F 1 "GND" H 1055 4027 50  0000 C CNN
+F 2 "" H 1050 4200 50  0001 C CNN
+F 3 "" H 1050 4200 50  0001 C CNN
+	1    1050 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 4200 1050 4200
 $EndSCHEMATC
