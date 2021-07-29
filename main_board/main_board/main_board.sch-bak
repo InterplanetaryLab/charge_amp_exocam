@@ -26,28 +26,6 @@ F 4 "https://www.pjrc.com/teensy/pinout.html" H 1450 13750 50  0001 C CNN "Pinou
 	1    0    0    -1  
 $EndComp
 $Comp
-L exocam_charge_amp:jstsh4x1 J1
-U 1 1 60F03F4F
-P 5050 1100
-F 0 "J1" V 4850 900 50  0000 L CNN
-F 1 "jstsh4x1" V 4750 750 50  0000 L CNN
-F 2 "exocam_charge_amp:jstsh4x1" H 5000 1250 50  0001 C CNN
-F 3 "" H 5000 1250 50  0001 C CNN
-	1    5050 1100
-	0    -1   -1   0   
-$EndComp
-$Comp
-L exocam_charge_amp:jstsh4x1 J2
-U 1 1 60F04A69
-P 6150 1000
-F 0 "J2" V 5950 800 50  0000 L CNN
-F 1 "jstsh4x1" V 5850 650 50  0000 L CNN
-F 2 "exocam_charge_amp:jstsh4x1" H 6100 1150 50  0001 C CNN
-F 3 "" H 6100 1150 50  0001 C CNN
-	1    6150 1000
-	0    -1   -1   0   
-$EndComp
-$Comp
 L exocam_charge_amp-cache:+3.3V #PWR0101
 U 1 1 60F0BD41
 P 5550 900
@@ -562,4 +540,34 @@ Wire Wire Line
 	8100 750  8100 900 
 NoConn ~ 7700 900 
 NoConn ~ 7850 1050
+Text GLabel 4200 5100 2    50   Input ~ 0
+VBat
+Wire Wire Line
+	4200 5100 3750 5100
+$Comp
+L exocam_charge_amp:jstsh5x1 J1
+U 1 1 61179B31
+P 5050 1100
+F 0 "J1" V 5074 1138 50  0000 L CNN
+F 1 "jstsh5x1" V 4983 1138 50  0000 L CNN
+F 2 "" H 5000 1250 50  0001 C CNN
+F 3 "" H 5000 1250 50  0001 C CNN
+	1    5050 1100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L exocam_charge_amp:jstsh5x1 J2
+U 1 1 6117E179
+P 6150 1000
+F 0 "J2" V 6174 1038 50  0000 L CNN
+F 1 "jstsh5x1" V 6083 1038 50  0000 L CNN
+F 2 "" H 6100 1150 50  0001 C CNN
+F 3 "" H 6100 1150 50  0001 C CNN
+	1    6150 1000
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 6700 1100
+NoConn ~ 6600 900 
+NoConn ~ 5500 1000
+NoConn ~ 5600 1200
 $EndSCHEMATC
