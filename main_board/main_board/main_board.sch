@@ -172,10 +172,10 @@ AMP17
 Wire Wire Line
 	1400 4700 1450 4700
 $Comp
-L exocam_charge_amp:jstsh4x1 J7
+L exocam_charge_amp:jstsh4x1 J1
 U 1 1 6111A17F
 P 4100 1100
-F 0 "J7" V 4149 1138 50  0000 L CNN
+F 0 "J1" V 4149 1138 50  0000 L CNN
 F 1 "jstsh4x1" V 4058 1138 50  0000 L CNN
 F 2 "exocam_charge_amp:jstsh4x1" H 4050 1250 50  0001 C CNN
 F 3 "" H 4050 1250 50  0001 C CNN
