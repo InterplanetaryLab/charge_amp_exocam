@@ -38,7 +38,7 @@ L exocam_charge_amp-cache:+3.3V #PWR0113
 U 1 1 60F77ECF
 P 3950 5300
 F 0 "#PWR0113" H 3950 5150 50  0001 C CNN
-F 1 "+3.3V" H 3965 5473 50  0000 C CNN
+F 1 "+3.3V" H 4100 5350 50  0000 C CNN
 F 2 "" H 3950 5300 50  0001 C CNN
 F 3 "" H 3950 5300 50  0001 C CNN
 	1    3950 5300
@@ -119,58 +119,34 @@ Text GLabel 1350 5900 0    50   Input ~ 0
 AMP4
 Wire Wire Line
 	1350 5900 1450 5900
-Text GLabel 3800 5900 2    50   Input ~ 0
-AMP5
 Wire Wire Line
 	3750 5900 3800 5900
-Text GLabel 3800 5800 2    50   Input ~ 0
-AMP6
 Wire Wire Line
 	3750 5800 3800 5800
-Text GLabel 3800 5700 2    50   Input ~ 0
-AMP7
 Wire Wire Line
 	3750 5700 3800 5700
-Text GLabel 3800 5600 2    50   Input ~ 0
-AMP8
 Wire Wire Line
 	3750 5600 3800 5600
-Text GLabel 3800 5500 2    50   Input ~ 0
-AMP9
 Wire Wire Line
 	3750 5500 3800 5500
-Text GLabel 3800 5400 2    50   Input ~ 0
-AMP10
 Wire Wire Line
 	3750 5400 3800 5400
-Text GLabel 3800 4800 2    50   Input ~ 0
+Text GLabel 1450 5100 0    50   Input ~ 0
 AMP11
 Wire Wire Line
 	3750 4800 3800 4800
-Text GLabel 3800 4700 2    50   Input ~ 0
+Text GLabel 3800 5900 2    50   Input ~ 0
 AMP12
 Wire Wire Line
 	3750 4700 3800 4700
-Text GLabel 1400 3800 0    50   Input ~ 0
+Text GLabel 3800 5800 2    50   Input ~ 0
 AMP13
 Wire Wire Line
 	1400 3800 1450 3800
-Text GLabel 1400 3900 0    50   Input ~ 0
+Text GLabel 3800 5700 2    50   Input ~ 0
 AMP14
 Wire Wire Line
 	1400 3900 1450 3900
-Text GLabel 1400 4500 0    50   Input ~ 0
-AMP15
-Wire Wire Line
-	1400 4500 1450 4500
-Text GLabel 1400 4600 0    50   Input ~ 0
-AMP16
-Wire Wire Line
-	1400 4600 1450 4600
-Text GLabel 1400 4700 0    50   Input ~ 0
-AMP17
-Wire Wire Line
-	1400 4700 1450 4700
 $Comp
 L exocam_charge_amp:jstsh4x1 J1
 U 1 1 6111A17F
@@ -220,39 +196,10 @@ F 3 "" H 6800 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 61051878
-P 3900 4000
-F 0 "#PWR?" H 3900 3750 50  0001 C CNN
-F 1 "GND" H 3905 3827 50  0000 C CNN
-F 2 "" H 3900 4000 50  0001 C CNN
-F 3 "" H 3900 4000 50  0001 C CNN
-	1    3900 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3750 4000 3900 4000
-Wire Wire Line
-	3750 4100 3750 4000
-Connection ~ 3750 4000
-$Comp
-L power:GND #PWR?
-U 1 1 6105371B
-P 1050 5400
-F 0 "#PWR?" H 1050 5150 50  0001 C CNN
-F 1 "GND" H 1055 5227 50  0000 C CNN
-F 2 "" H 1050 5400 50  0001 C CNN
-F 3 "" H 1050 5400 50  0001 C CNN
-	1    1050 5400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1450 5400 1050 5400
-$Comp
-L power:GND #PWR?
+L power:GND #PWR0103
 U 1 1 610550ED
 P 1050 4200
-F 0 "#PWR?" H 1050 3950 50  0001 C CNN
+F 0 "#PWR0103" H 1050 3950 50  0001 C CNN
 F 1 "GND" H 1055 4027 50  0000 C CNN
 F 2 "" H 1050 4200 50  0001 C CNN
 F 3 "" H 1050 4200 50  0001 C CNN
@@ -261,4 +208,22 @@ F 3 "" H 1050 4200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1450 4200 1050 4200
+Text GLabel 3750 2300 2    50   Input ~ 0
+AMP17
+NoConn ~ 1450 5200
+NoConn ~ 1450 5300
+Text GLabel 1450 4600 0    50   Input ~ 0
+AMP6
+Text GLabel 1450 4700 0    50   Input ~ 0
+AMP7
+Text GLabel 1450 4800 0    50   Input ~ 0
+AMP8
+Text GLabel 1450 4900 0    50   Input ~ 0
+AMP9
+Text GLabel 1450 5000 0    50   Input ~ 0
+AMP10
+Text GLabel 3750 2400 2    50   Input ~ 0
+AMP16
+Text GLabel 1450 4500 0    50   Input ~ 0
+AMP15
 $EndSCHEMATC
