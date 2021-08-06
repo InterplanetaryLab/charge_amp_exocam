@@ -58,7 +58,7 @@ F 3 "" H 1000 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1000 1600 1450 1600
+	1000 1600 1200 1600
 $Comp
 L exocam_charge_amp-rescue:MountingHole-Mechanical H1
 U 1 1 60F7FB22
@@ -226,4 +226,38 @@ Text GLabel 3750 2400 2    50   Input ~ 0
 AMP16
 Text GLabel 1450 4500 0    50   Input ~ 0
 AMP15
+$Comp
+L exocam_charge_amp:power_bus J2
+U 1 1 610BF40F
+P 4750 5050
+F 0 "J2" H 4828 4963 50  0000 L CNN
+F 1 "3.3v bus" H 4828 4872 50  0000 L CNN
+F 2 "exocam_charge_amp:power_bus" H 4750 5050 50  0001 C CNN
+F 3 "" H 4750 5050 50  0001 C CNN
+	1    4750 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 5300 4750 5300
+Wire Wire Line
+	4750 5300 4750 5250
+Connection ~ 3950 5300
+$Comp
+L exocam_charge_amp:power_bus J3
+U 1 1 610C1AF2
+P 1200 1300
+F 0 "J3" H 1278 1213 50  0000 L CNN
+F 1 "GND_bus" H 1278 1122 50  0000 L CNN
+F 2 "exocam_charge_amp:power_bus" H 1200 1300 50  0001 C CNN
+F 3 "" H 1200 1300 50  0001 C CNN
+	1    1200 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 1600 1200 1500
+Connection ~ 1200 1600
+Wire Wire Line
+	1200 1600 1450 1600
+Text Notes 4700 5500 0    50   ~ 0
+Just a large ish pad that can be used for soldering a large number of wires.
 $EndSCHEMATC
