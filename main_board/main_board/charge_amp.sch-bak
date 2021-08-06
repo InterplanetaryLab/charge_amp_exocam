@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L exocam_charge_amp:TLV2771CDBVT U2
+L main_board-rescue:TLV2771CDBVT-exocam_charge_amp U2
 U 1 1 60F4268F
 P 3900 2000
 F 0 "U2" H 3925 2215 50  0000 C CNN
@@ -47,7 +47,7 @@ F 3 "~" H 3900 3350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L exocam_charge_amp-cache:+3.3V #PWR0117
+L main_board-rescue:+3.3V-exocam_charge_amp-cache #PWR0117
 U 1 1 60F44497
 P 4400 2050
 F 0 "#PWR0117" H 4400 1900 50  0001 C CNN
@@ -110,7 +110,7 @@ $EndComp
 Wire Wire Line
 	850  1350 850  1400
 $Comp
-L exocam_charge_amp-cache:+3.3V #PWR0119
+L main_board-rescue:+3.3V-exocam_charge_amp-cache #PWR0119
 U 1 1 60F49067
 P 850 1050
 F 0 "#PWR0119" H 850 900 50  0001 C CNN
@@ -208,7 +208,7 @@ AMP15
 Text GLabel 2150 1550 0    50   Input ~ 0
 UNAMP15
 $Comp
-L exocam_charge_amp:TLV2771CDBVT U3
+L main_board-rescue:TLV2771CDBVT-exocam_charge_amp U3
 U 1 1 60F66909
 P 3900 4150
 F 0 "U3" H 3925 4365 50  0000 C CNN
@@ -241,7 +241,7 @@ F 3 "~" H 3900 5500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L exocam_charge_amp-cache:+3.3V #PWR0121
+L main_board-rescue:+3.3V-exocam_charge_amp-cache #PWR0121
 U 1 1 60F6691B
 P 4400 4200
 F 0 "#PWR0121" H 4400 4050 50  0001 C CNN
@@ -349,7 +349,7 @@ AMP16
 Text GLabel 2150 3700 0    50   Input ~ 0
 UNAMP16
 $Comp
-L exocam_charge_amp:TLV2771CDBVT U4
+L main_board-rescue:TLV2771CDBVT-exocam_charge_amp U4
 U 1 1 60F6A561
 P 7050 2050
 F 0 "U4" H 7075 2265 50  0000 C CNN
@@ -382,7 +382,7 @@ F 3 "~" H 7050 3400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L exocam_charge_amp-cache:+3.3V #PWR0123
+L main_board-rescue:+3.3V-exocam_charge_amp-cache #PWR0123
 U 1 1 60F6A573
 P 7550 2100
 F 0 "#PWR0123" H 7550 1950 50  0001 C CNN

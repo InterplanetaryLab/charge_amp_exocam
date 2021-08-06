@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L teensy:Teensy3.5_All_Pins U1
+L main_board-rescue:Teensy3.5_All_Pins-teensy U1
 U 1 1 60EFC6FB
 P 2600 3750
 F 0 "U1" H 2600 6387 60  0000 C CNN
@@ -34,14 +34,14 @@ F0 "Sheet60F3F467" 50
 F1 "charge_amp.sch" 50
 $EndSheet
 $Comp
-L exocam_charge_amp-cache:+3.3V #PWR0113
+L main_board-rescue:+3.3V-exocam_charge_amp-cache #PWR0113
 U 1 1 60F77ECF
-P 3950 5300
-F 0 "#PWR0113" H 3950 5150 50  0001 C CNN
-F 1 "+3.3V" H 4100 5350 50  0000 C CNN
-F 2 "" H 3950 5300 50  0001 C CNN
-F 3 "" H 3950 5300 50  0001 C CNN
-	1    3950 5300
+P 4750 5250
+F 0 "#PWR0113" H 4750 5100 50  0001 C CNN
+F 1 "+3.3V" H 4900 5300 50  0000 C CNN
+F 2 "" H 4750 5250 50  0001 C CNN
+F 3 "" H 4750 5250 50  0001 C CNN
+	1    4750 5250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -60,7 +60,7 @@ $EndComp
 Wire Wire Line
 	1000 1600 1200 1600
 $Comp
-L exocam_charge_amp-rescue:MountingHole-Mechanical H1
+L main_board-rescue:MountingHole-Mechanical-exocam_charge_amp-rescue H1
 U 1 1 60F7FB22
 P 6800 2600
 F 0 "H1" H 6900 2646 50  0000 L CNN
@@ -71,7 +71,7 @@ F 3 "" H 6800 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L exocam_charge_amp-rescue:MountingHole-Mechanical H2
+L main_board-rescue:MountingHole-Mechanical-exocam_charge_amp-rescue H2
 U 1 1 60F875E4
 P 6800 2850
 F 0 "H2" H 6900 2896 50  0000 L CNN
@@ -82,7 +82,7 @@ F 3 "" H 6800 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L exocam_charge_amp-rescue:MountingHole-Mechanical H3
+L main_board-rescue:MountingHole-Mechanical-exocam_charge_amp-rescue H3
 U 1 1 60F8850D
 P 6800 3100
 F 0 "H3" H 6900 3146 50  0000 L CNN
@@ -93,7 +93,7 @@ F 3 "" H 6800 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L exocam_charge_amp-rescue:MountingHole-Mechanical H4
+L main_board-rescue:MountingHole-Mechanical-exocam_charge_amp-rescue H4
 U 1 1 60F8942D
 P 6800 3350
 F 0 "H4" H 6900 3396 50  0000 L CNN
@@ -147,21 +147,8 @@ Text GLabel 3800 5700 2    50   Input ~ 0
 AMP14
 Wire Wire Line
 	1400 3900 1450 3900
-$Comp
-L exocam_charge_amp:jstsh4x1 J1
-U 1 1 6111A17F
-P 4100 1100
-F 0 "J1" V 4149 1138 50  0000 L CNN
-F 1 "jstsh4x1" V 4058 1138 50  0000 L CNN
-F 2 "exocam_charge_amp:jstsh4x1" H 4050 1250 50  0001 C CNN
-F 3 "" H 4050 1250 50  0001 C CNN
-	1    4100 1100
-	0    -1   -1   0   
-$EndComp
-Text GLabel 4250 850  1    50   Input ~ 0
-VBat
-Wire Wire Line
-	4250 850  4250 1000
+Text GLabel 4450 850  1    50   Input ~ 0
+RTCBat
 Wire Wire Line
 	4150 1000 4150 850 
 Wire Wire Line
@@ -177,15 +164,13 @@ F 3 "" H 4050 850 50  0001 C CNN
 	1    4050 850 
 	1    0    0    -1  
 $EndComp
-NoConn ~ 4350 1000
-NoConn ~ 4450 1000
 NoConn ~ 4600 1150
 Text GLabel 4200 5100 2    50   Input ~ 0
-VBat
+BAT
 Wire Wire Line
 	4200 5100 3750 5100
 $Comp
-L exocam_charge_amp-rescue:MountingHole-Mechanical H5
+L main_board-rescue:MountingHole-Mechanical-exocam_charge_amp-rescue H5
 U 1 1 61037EA1
 P 6800 3600
 F 0 "H5" H 6900 3646 50  0000 L CNN
@@ -227,23 +212,23 @@ AMP16
 Text GLabel 1450 4500 0    50   Input ~ 0
 AMP15
 $Comp
-L exocam_charge_amp:power_bus J2
+L main_board-rescue:power_bus-exocam_charge_amp J2
 U 1 1 610BF40F
-P 4750 5050
-F 0 "J2" H 4828 4963 50  0000 L CNN
-F 1 "3.3v bus" H 4828 4872 50  0000 L CNN
-F 2 "exocam_charge_amp:power_bus" H 4750 5050 50  0001 C CNN
-F 3 "" H 4750 5050 50  0001 C CNN
-	1    4750 5050
+P 4500 5100
+F 0 "J2" H 4578 5013 50  0000 L CNN
+F 1 "3.3v bus" H 4578 4922 50  0000 L CNN
+F 2 "exocam_charge_amp:power_bus" H 4500 5100 50  0001 C CNN
+F 3 "" H 4500 5100 50  0001 C CNN
+	1    4500 5100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3950 5300 4750 5300
+	3950 5300 4500 5300
 Wire Wire Line
 	4750 5300 4750 5250
 Connection ~ 3950 5300
 $Comp
-L exocam_charge_amp:power_bus J3
+L main_board-rescue:power_bus-exocam_charge_amp J3
 U 1 1 610C1AF2
 P 1200 1300
 F 0 "J3" H 1278 1213 50  0000 L CNN
@@ -260,4 +245,35 @@ Wire Wire Line
 	1200 1600 1450 1600
 Text Notes 4700 5500 0    50   ~ 0
 Just a large ish pad that can be used for soldering a large number of wires.
+$Comp
+L main_board-rescue:jstsh4x1-exocam_charge_amp J1
+U 1 1 6111A17F
+P 4100 1100
+F 0 "J1" V 4149 1138 50  0000 L CNN
+F 1 "jstsh4x1" V 4058 1138 50  0000 L CNN
+F 2 "exocam_charge_amp:jstsh4x1" H 4050 1250 50  0001 C CNN
+F 3 "" H 4050 1250 50  0001 C CNN
+	1    4100 1100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4450 850  4450 1000
+Wire Wire Line
+	4350 1000 4350 800 
+Wire Wire Line
+	4350 800  4150 800 
+Wire Wire Line
+	4150 800  4150 850 
+Connection ~ 4150 850 
+Text GLabel 4250 850  1    50   Input ~ 0
+BAT
+Wire Wire Line
+	4250 850  4250 1000
+Text GLabel 1200 4000 0    50   Input ~ 0
+RTCBat
+Wire Wire Line
+	1200 4000 1450 4000
+Connection ~ 4500 5300
+Wire Wire Line
+	4500 5300 4750 5300
 $EndSCHEMATC

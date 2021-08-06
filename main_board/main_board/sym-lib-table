@@ -3,4 +3,5 @@
   (lib (name exocam_charge_amp-cache)(type Legacy)(uri /home/rommac/charge_amp_exocam/symbols/exocam_charge_amp-cache.lib)(options "")(descr ""))
   (lib (name exocam_charge_amp-rescue)(type Legacy)(uri /home/rommac/charge_amp_exocam/symbols/exocam_charge_amp-rescue.lib)(options "")(descr ""))
   (lib (name teensy)(type Legacy)(uri /home/rommac/teensy_library/teensy.lib)(options "")(descr ""))
+  (lib (name main_board-rescue)(type Legacy)(uri ${KIPRJMOD}/main_board-rescue.lib)(options "")(descr ""))
 )
