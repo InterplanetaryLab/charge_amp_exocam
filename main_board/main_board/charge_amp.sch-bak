@@ -17,6 +17,8 @@ $Comp
 L main_board-rescue:TLV2771CDBVT-exocam_charge_amp U2
 U 1 1 60F4268F
 P 3900 2000
+AR Path="/60F4268F" Ref="U2"  Part="1" 
+AR Path="/60F3F468/60F4268F" Ref="U2"  Part="1" 
 F 0 "U2" H 3925 2215 50  0000 C CNN
 F 1 "TLV2771CDBVT" H 3925 2124 50  0000 C CNN
 F 2 "exocam_charge_amp:TLV2271DBV" H 3900 2000 50  0001 C CNN
@@ -211,6 +213,8 @@ $Comp
 L main_board-rescue:TLV2771CDBVT-exocam_charge_amp U3
 U 1 1 60F66909
 P 3900 4150
+AR Path="/60F66909" Ref="U3"  Part="1" 
+AR Path="/60F3F468/60F66909" Ref="U3"  Part="1" 
 F 0 "U3" H 3925 4365 50  0000 C CNN
 F 1 "TLV2771CDBVT" H 3925 4274 50  0000 C CNN
 F 2 "exocam_charge_amp:TLV2271DBV" H 3900 4150 50  0001 C CNN
@@ -352,6 +356,8 @@ $Comp
 L main_board-rescue:TLV2771CDBVT-exocam_charge_amp U4
 U 1 1 60F6A561
 P 7050 2050
+AR Path="/60F6A561" Ref="U4"  Part="1" 
+AR Path="/60F3F468/60F6A561" Ref="U4"  Part="1" 
 F 0 "U4" H 7075 2265 50  0000 C CNN
 F 1 "TLV2771CDBVT" H 7075 2174 50  0000 C CNN
 F 2 "exocam_charge_amp:TLV2271DBV" H 7050 2050 50  0001 C CNN

@@ -44,8 +44,6 @@ F 3 "" H 4750 5250 50  0001 C CNN
 	1    4750 5250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3750 5300 3950 5300
 $Comp
 L power:GND #PWR0114
 U 1 1 60F7C317
@@ -65,7 +63,7 @@ U 1 1 60F7FB22
 P 6800 2600
 F 0 "H1" H 6900 2646 50  0000 L CNN
 F 1 "MountingHole-Mechanical" H 6900 2555 50  0000 L CNN
-F 2 "exocam_charge_amp:mount_hole_2.5mm" H 6800 2600 50  0001 C CNN
+F 2 "exocam_charge_amp:mount_hole_3mm" H 6800 2600 50  0001 C CNN
 F 3 "" H 6800 2600 50  0001 C CNN
 	1    6800 2600
 	1    0    0    -1  
@@ -76,7 +74,7 @@ U 1 1 60F875E4
 P 6800 2850
 F 0 "H2" H 6900 2896 50  0000 L CNN
 F 1 "MountingHole-Mechanical" H 6900 2805 50  0000 L CNN
-F 2 "exocam_charge_amp:mount_hole_2.5mm" H 6800 2850 50  0001 C CNN
+F 2 "exocam_charge_amp:mount_hole_3mm" H 6800 2850 50  0001 C CNN
 F 3 "" H 6800 2850 50  0001 C CNN
 	1    6800 2850
 	1    0    0    -1  
@@ -87,7 +85,7 @@ U 1 1 60F8850D
 P 6800 3100
 F 0 "H3" H 6900 3146 50  0000 L CNN
 F 1 "MountingHole-Mechanical" H 6900 3055 50  0000 L CNN
-F 2 "exocam_charge_amp:mount_hole_2.5mm" H 6800 3100 50  0001 C CNN
+F 2 "exocam_charge_amp:mount_hole_3mm" H 6800 3100 50  0001 C CNN
 F 3 "" H 6800 3100 50  0001 C CNN
 	1    6800 3100
 	1    0    0    -1  
@@ -98,7 +96,7 @@ U 1 1 60F8942D
 P 6800 3350
 F 0 "H4" H 6900 3396 50  0000 L CNN
 F 1 "MountingHole-Mechanical" H 6900 3305 50  0000 L CNN
-F 2 "exocam_charge_amp:mount_hole_2.5mm" H 6800 3350 50  0001 C CNN
+F 2 "exocam_charge_amp:mount_hole_3mm" H 6800 3350 50  0001 C CNN
 F 3 "" H 6800 3350 50  0001 C CNN
 	1    6800 3350
 	1    0    0    -1  
@@ -223,10 +221,7 @@ F 3 "" H 4500 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3950 5300 4500 5300
-Wire Wire Line
 	4750 5300 4750 5250
-Connection ~ 3950 5300
 $Comp
 L main_board-rescue:power_bus-exocam_charge_amp J3
 U 1 1 610C1AF2
@@ -276,4 +271,6 @@ Wire Wire Line
 Connection ~ 4500 5300
 Wire Wire Line
 	4500 5300 4750 5300
+Wire Wire Line
+	3750 5300 4500 5300
 $EndSCHEMATC
