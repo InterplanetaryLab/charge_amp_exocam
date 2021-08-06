@@ -5,9 +5,9 @@
     {
       "Vendor":      "KiCad",
       "Application": "Pcbnew",
-      "Version":     "5.1.10"
+      "Version":     "(5.1.10)-1"
     },
-    "CreationDate":  "2021-07-19T16:22:53-07:00"
+    "CreationDate":  "2021-08-06T13:27:47-07:00"
   },
   "GeneralSpecs":
   {
@@ -58,16 +58,6 @@
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "dogbone-F_SilkS.gbr",
-      "FileFunction":  "Legend,Top",
-      "FilePolarity":  "Positive"
-    },
-    {
-      "Path":  "dogbone-B_SilkS.gbr",
-      "FileFunction":  "Legend,Bot",
-      "FilePolarity":  "Positive"
-    },
-    {
       "Path":  "dogbone-F_Mask.gbr",
       "FileFunction":  "SolderMask,Top",
       "FilePolarity":  "Negative"
@@ -85,10 +75,6 @@
   ],
   "MaterialStackup":
   [
-    {
-      "Type":  "Legend",
-      "Notes":  "Layer F.SilkS"
-    },
     {
       "Type":  "SolderPaste",
       "Notes":  "Layer F.Paste"
@@ -117,10 +103,6 @@
     {
       "Type":  "SolderPaste",
       "Notes":  "Layer B.Paste"
-    },
-    {
-      "Type":  "Legend",
-      "Notes":  "Layer B.SilkS"
     }
   ]
 }
