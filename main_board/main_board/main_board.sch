@@ -237,7 +237,7 @@ Wire Wire Line
 	1200 1600 1200 1500
 Connection ~ 1200 1600
 Wire Wire Line
-	1200 1600 1450 1600
+	1200 1600 1400 1600
 Text Notes 4700 5500 0    50   ~ 0
 Just a large ish pad that can be used for soldering a large number of wires.
 $Comp
@@ -273,4 +273,32 @@ Wire Wire Line
 	4500 5300 4750 5300
 Wire Wire Line
 	3750 5300 4500 5300
+Text GLabel 3800 4800 2    50   Input ~ 0
+AMP5
+$Comp
+L Switch:SW_MEC_5G SW1
+U 1 1 61235458
+P 1150 1050
+F 0 "SW1" H 1150 1335 50  0000 C CNN
+F 1 "SW_MEC_5G" H 1150 1244 50  0000 C CNN
+F 2 "" H 1150 1250 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 1150 1250 50  0001 C CNN
+	1    1150 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1600 1400 1050
+Wire Wire Line
+	1400 1050 1350 1050
+Connection ~ 1400 1600
+Wire Wire Line
+	1400 1600 1450 1600
+Wire Wire Line
+	950  1050 750  1050
+Wire Wire Line
+	750  1050 750  1900
+Wire Wire Line
+	750  1900 1450 1900
+Text Notes 700  700  0    50   ~ 0
+Start Trial & Stop Trial Button
 $EndSCHEMATC

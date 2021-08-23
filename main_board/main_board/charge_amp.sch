@@ -27,7 +27,7 @@ F 3 "" H 3900 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C1
+L main_board-rescue:C-Device C1
 U 1 1 60F42E52
 P 3900 2950
 F 0 "C1" V 3648 2950 50  0000 C CNN
@@ -38,7 +38,7 @@ F 3 "~" H 3900 2950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R3
+L main_board-rescue:R-Device R3
 U 1 1 60F43CAE
 P 3900 3350
 F 0 "R3" V 3693 3350 50  0000 C CNN
@@ -77,9 +77,11 @@ $EndComp
 Wire Wire Line
 	3100 2200 3600 2200
 $Comp
-L Device:Buzzer BZ1
+L main_board-rescue:Buzzer-Device BZ1
 U 1 1 60F46701
 P 2300 1350
+AR Path="/60F46701" Ref="BZ1"  Part="1" 
+AR Path="/60F3F468/60F46701" Ref="BZ1"  Part="1" 
 F 0 "BZ1" V 2351 1163 50  0000 R CNN
 F 1 "Buzzer" V 2260 1163 50  0000 R CNN
 F 2 "exocam_charge_amp:piezo_buzzer_alt" V 2275 1450 50  0001 C CNN
@@ -88,7 +90,7 @@ F 3 "~" V 2275 1450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R1
+L main_board-rescue:R-Device R1
 U 1 1 60F473D1
 P 850 1200
 F 0 "R1" H 920 1246 50  0000 L CNN
@@ -99,7 +101,7 @@ F 3 "~" H 850 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R2
+L main_board-rescue:R-Device R2
 U 1 1 60F47F6A
 P 850 1600
 F 0 "R2" H 920 1646 50  0000 L CNN
@@ -134,7 +136,7 @@ F 3 "" H 850 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R4
+L main_board-rescue:R-Device R4
 U 1 1 60F4A76F
 P 2300 1650
 F 0 "R4" V 2093 1650 50  0000 C CNN
@@ -223,7 +225,7 @@ F 3 "" H 3900 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C2
+L main_board-rescue:C-Device C2
 U 1 1 60F6690F
 P 3900 5100
 F 0 "C2" V 3648 5100 50  0000 C CNN
@@ -234,7 +236,7 @@ F 3 "~" H 3900 5100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R6
+L main_board-rescue:R-Device R6
 U 1 1 60F66915
 P 3900 5500
 F 0 "R6" V 3693 5500 50  0000 C CNN
@@ -273,9 +275,11 @@ $EndComp
 Wire Wire Line
 	3100 4350 3600 4350
 $Comp
-L Device:Buzzer BZ2
+L main_board-rescue:Buzzer-Device BZ2
 U 1 1 60F6692A
 P 2300 3500
+AR Path="/60F6692A" Ref="BZ2"  Part="1" 
+AR Path="/60F3F468/60F6692A" Ref="BZ2"  Part="1" 
 F 0 "BZ2" V 2351 3313 50  0000 R CNN
 F 1 "Buzzer" V 2260 3313 50  0000 R CNN
 F 2 "exocam_charge_amp:piezo_buzzer_alt" V 2275 3600 50  0001 C CNN
@@ -284,7 +288,7 @@ F 3 "~" V 2275 3600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R5
+L main_board-rescue:R-Device R5
 U 1 1 60F66930
 P 2300 3800
 F 0 "R5" V 2093 3800 50  0000 C CNN
@@ -366,7 +370,7 @@ F 3 "" H 7050 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C3
+L main_board-rescue:C-Device C3
 U 1 1 60F6A567
 P 7050 3000
 F 0 "C3" V 6798 3000 50  0000 C CNN
@@ -377,7 +381,7 @@ F 3 "~" H 7050 3000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R8
+L main_board-rescue:R-Device R8
 U 1 1 60F6A56D
 P 7050 3400
 F 0 "R8" V 6843 3400 50  0000 C CNN
@@ -416,9 +420,11 @@ $EndComp
 Wire Wire Line
 	6250 2250 6750 2250
 $Comp
-L Device:Buzzer BZ3
+L main_board-rescue:Buzzer-Device BZ3
 U 1 1 60F6A582
 P 5450 1400
+AR Path="/60F6A582" Ref="BZ3"  Part="1" 
+AR Path="/60F3F468/60F6A582" Ref="BZ3"  Part="1" 
 F 0 "BZ3" V 5501 1213 50  0000 R CNN
 F 1 "Buzzer" V 5410 1213 50  0000 R CNN
 F 2 "exocam_charge_amp:piezo_buzzer_alt" V 5425 1500 50  0001 C CNN
@@ -427,7 +433,7 @@ F 3 "~" V 5425 1500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R7
+L main_board-rescue:R-Device R7
 U 1 1 60F6A588
 P 5450 1700
 F 0 "R7" V 5243 1700 50  0000 C CNN
