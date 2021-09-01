@@ -109,8 +109,6 @@ Text GLabel 1350 5700 0    50   Input ~ 0
 AMP2
 Wire Wire Line
 	1350 5700 1450 5700
-Text GLabel 1350 5800 0    50   Input ~ 0
-AMP3
 Wire Wire Line
 	1350 5800 1450 5800
 Text GLabel 1350 5900 0    50   Input ~ 0
@@ -301,4 +299,6 @@ Wire Wire Line
 	750  1900 1450 1900
 Text Notes 700  700  0    50   ~ 0
 Start Trial & Stop Trial Button
+Text GLabel 3800 4700 2    50   Input ~ 0
+AMP3
 $EndSCHEMATC

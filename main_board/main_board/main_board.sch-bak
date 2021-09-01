@@ -299,4 +299,6 @@ Wire Wire Line
 	750  1050 750  1900
 Wire Wire Line
 	750  1900 1450 1900
+Text Notes 700  700  0    50   ~ 0
+Start Trial & Stop Trial Button
 $EndSCHEMATC
